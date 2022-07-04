@@ -1,1 +1,1 @@
-# ispace-summer-code-cam-2022
+# ispace-summer-code-camp-2022
