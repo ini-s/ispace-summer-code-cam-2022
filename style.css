@@ -1,0 +1,424 @@
+html, body{
+    font-family: "Montserrat";
+    width:100%;
+    overflow-x: hidden;
+}
+h2{
+    font-weight: 700;
+}
+p{
+    font-weight:500;
+}
+/* navbar */
+.navbar{
+    background-color: white;
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 3;
+    box-shadow: 0 0 14px 6px #9c029c  ;
+}
+.navbar .nav-link{
+    color:#320042;
+}
+.navbar .nav-link:hover{
+    color:#9c029c;
+}
+.navbar .brand-img{
+    max-height:50px;
+}
+.navbar .navbar-left{
+    margin-left:10rem;
+} 
+.navbar hr{
+    display:none;
+}
+.navbar .register-btn{
+    margin-left: 5rem;
+    border: 2px solid #320042;
+    border-radius: 4px;
+    padding: 5px 12px;
+    text-decoration: none;
+    color:#320042 ;
+}
+.navbar .register-btn:hover{
+    background-color: #9c029c;
+    color:white;
+    border-color:#9c029c;
+}
+.navbar .toggle-btn{
+    border: none;
+    background-color: white;
+    text-align: center;
+    display: none;
+    color:#9c029c
+}
+/* home  */
+.home{
+    margin-top: 76px;
+    text-align: center;
+    position: relative;
+}
+.home h1{
+    color:white;
+    font-weight: 700;
+    font-size: 58px;
+}
+.home h1 .yellow{
+    color:#fbcf14;
+}
+.home h1 .blue{
+    color:#016699;
+}
+.home h1 .green{
+    color:#47b649;
+}
+.home h1 .orange{
+    color:#f26722;
+}
+.home h1 .purple{
+    color:#95268f;
+}
+.home h1 .black{
+    color:#8e8b8b;
+}
+.home h1 span{
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 900;
+}
+.home p{
+    color:white;
+    padding-bottom: 2rem;
+}
+.home .home-image{
+    background-image: url(./images/summer-cropped.jpg);
+}
+.home .home-image2{
+    background-image:url(./images/out-of-school-image.JPG);
+}
+.home .home-image, .home .home-image2{
+    position: relative;
+    z-index: -1;
+    height:29.8rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(5px);
+}
+.home .overlay{
+    position: absolute;
+    z-index: 1;
+    height:30rem;
+    width:100%;
+    top:0;
+    left:0;
+    background-color: black;
+    opacity: 0.7
+}
+.home .text{
+    text-align: center;
+    line-height: 1.5;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    padding:3rem 8rem;
+    transform: translate(-50%, -50%);
+}
+.home .text a{
+    text-decoration: none;
+    background-color: #9c029c;
+    color:white;
+    padding:1rem 2rem;
+    border-radius: 3.125rem;
+    font-weight: 700;
+    transition: all 0.5s ease;
+}
+.home .text a:hover{
+    background-color:white;
+    color:#9c029c;
+}
+.home .enroll:hover{
+    transform: scale(1.2);
+}
+/* about */
+.about{
+    text-align: center;
+    line-height: 1.5;
+    padding: 3rem 0;
+}
+.about .carousel-img{
+    height:30rem;
+    object-fit: contain;
+}
+.about h2{
+    margin-bottom: 0;
+}
+.about p{
+    margin:2rem 0;
+    padding: 0 1rem
+}
+.about hr{
+    color:#9c029c;
+    width:30%;
+    height:0.2rem;
+    margin: 0.5rem auto;
+}
+/* Courses */
+.courses{
+    background-color:#320042;
+    padding: 5rem 0;
+}
+.courses h2{
+    color:white;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.card{
+    width:18rem;
+    margin:1rem;
+    padding: 0;
+    border-radius: 0.5rem;
+    transition: transform 500ms ease;
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #efedef;
+}
+.card h5{
+    font-weight: 700;
+}
+.card .ruler{
+    height:0.2rem;
+    width:0;
+    background-color: #9c029c;
+}
+.card:hover .ruler{
+    width:30%;
+}
+.card img{
+    border-radius: 0.5rem;
+    height:150px;
+    object-fit: cover;
+}
+/* schedule  */
+.schedule{
+    text-align: center;
+    padding: 5rem 0;
+}
+.schedule h2{
+    margin-bottom: 2rem;
+}
+.schedule h5{
+    margin-bottom: 1rem;
+}
+.schedule p{
+    line-height: 2;
+}
+.schedule .schedule-row{
+    margin: 0;
+}
+.schedule .card{
+    margin: auto;
+    height:300px;
+    width:22rem;
+}
+.schedule .card:hover{
+    border-color: #9c029c;
+}
+.schedule .card i{
+    margin-right: 0.5rem;
+    color:#320042;
+}
+.schedule .card .card-text{
+    margin: 1rem 0 2rem 0;
+}
+/* info  */
+.info{
+    padding: 5rem 4rem;
+    text-align: center;
+    color:white;
+    background-color: #320042 ;
+}
+.info .top{
+    color: white;
+    background-color:#320042;
+    margin-bottom: 3rem;
+}
+.info .bottom{
+    margin-top: 3rem;
+    line-height: 1.7;
+}
+.info hr{
+    background-color: white;
+}
+.info i{
+    display: block;
+    margin-bottom: 1rem;
+}
+.info .discount{
+    margin-top: 0;
+}
+.info .physical-cost{
+    margin-bottom: 0;
+}
+.info .collaboration{
+    margin-top: 1.5rem;
+    transition: all 0.5s ease;
+}
+.info .finger{
+    margin-top: 1rem;
+}
+.info .collaboration:hover{
+    transform: scale(1.2);
+}
+.info .register-collab{
+    text-decoration: none;
+    background-color: white;
+    color:#320042;
+    border-radius: 15px;
+    padding: 0.5rem 1.5rem;
+}
+.info .register-collab:hover{
+    color:#9c029c;
+}
+/* footer  */
+.footer{
+    padding: 2rem ;
+}
+.footer img{
+    width:30%;
+    margin-bottom: 1rem;
+}
+.footer .contact a{
+    color:#320042;
+    margin-right:1rem;
+}
+.footer .contact a:hover{
+    color:#9c029c;
+}
+.footer .map-section{
+    text-align: end;
+}
+.footer .map{
+    margin-top: 4rem;
+    width:70%;
+    height:70%;;
+}
+.footer hr{
+    color:#9c029c
+}
+.footer h4{
+    margin-bottom: 1rem;
+}
+.footer .contact a{
+    text-decoration: underline;
+}
+.footer a{
+    text-decoration: none;
+}
+.footer .footer-icons{
+   text-align: end;
+}
+.footer .btm-icons{
+    color: #320042;
+    width:2rem;
+    transition: all 0.3s ease;
+  
+}
+.footer .btm-icons:hover{
+    color:#9c029c;
+    transform: scale(1.4);
+}
+@media screen and (max-width:991px){
+    .home .text{
+        padding: 2rem;
+    }
+    .home h1{
+        font-size: 3rem;
+    }
+    .navbar .toggle-btn{
+        display: block;
+    }
+    .navbar-nav{
+        padding: 0 1.5rem;
+    }
+    .navbar .navbar-left{
+        margin:0;
+    }
+    .navbar .register-btn{
+        margin-left: 0.5rem;
+        padding:2% 10%;
+        border: 1px solid  #320042;
+        text-align: center;
+    }
+    .about .carousel-img{
+        width:100%;
+    }
+    .about .carousel-inner{
+        padding:0 2rem;
+    }
+    .schedule .card{
+        margin-bottom: 2rem;
+    }
+    .home p{
+        padding-bottom: 1rem;
+    }
+
+}
+@media screen and (max-width:768px){
+    .home h1{
+        font-size: 2.5rem;
+    }
+    .footer .footer-icons{
+        text-align: start;
+    }
+    .footer .map{
+        width:65vw;
+    }
+    .about .carousel-img{
+        padding: 0 2rem;
+    }
+    .info{
+        text-align: center;
+    }
+    .info .column{
+        margin-top: 0;
+    }
+    .info .collab{
+        margin-top: 3rem;
+    }
+    .info .register-collab{
+        margin-bottom: 3rem;
+    }
+    .footer .map-section{
+        text-align: start;
+    }
+    .container-fluid{
+        padding: 0;
+        margin: 0;
+    }
+    .navbar .nav-container{
+        padding: 0 1rem
+    }
+}
+@media screen and (max-width:481px){
+    .home{
+        margin-top: 30px;
+    }
+    .navbar .brand-img{
+        width:60%;
+    }
+    .courses .card, .schedule .card{
+        width:15rem
+    }
+    .info{
+        padding:3rem 1rem
+    }
+    .schedule .virtual-card{
+        height:410px
+    }
+    .schedule .card{
+        line-height: 1.5;
+    }
+}
