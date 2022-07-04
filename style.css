@@ -91,10 +91,10 @@ p{
     padding-bottom: 2rem;
 }
 .home .home-image{
-    background-image: url(./images/summer-cropped.jpg);
+    background-image: url(./images/summer-cropped-min.jpg);
 }
 .home .home-image2{
-    background-image:url(./images/out-of-school-image.JPG);
+    background-image:url(./images/out-of-school-image-min.JPG);
 }
 .home .home-image, .home .home-image2{
     position: relative;
@@ -364,7 +364,6 @@ p{
     .home p{
         padding-bottom: 1rem;
     }
-
 }
 @media screen and (max-width:768px){
     .home h1{
