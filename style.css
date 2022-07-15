@@ -9,6 +9,24 @@ h2{
 p{
     font-weight:500;
 }
+.yellow{
+    color:#fbcf14;
+} 
+.blue{
+    color:#016699;
+}
+.green{
+    color:#47b649;
+}
+.orange{
+    color:#f26722;
+}
+.purple{
+    color:#95268f;
+}
+.black{
+    color:#8e8b8b;
+}
 /* navbar */
 .navbar{
     background-color: white;
@@ -33,18 +51,13 @@ p{
 .navbar hr{
     display:none;
 }
-.navbar .register-btn{
+.navbar .shop{
     margin-left: 5rem;
-    border: 2px solid #320042;
-    border-radius: 4px;
-    padding: 5px 12px;
     text-decoration: none;
     color:#320042 ;
 }
-.navbar .register-btn:hover{
-    background-color: #9c029c;
-    color:white;
-    border-color:#9c029c;
+.navbar .shop:hover{
+    color: #9c029c ;
 }
 .navbar .toggle-btn{
     border: none;
@@ -64,24 +77,6 @@ p{
     font-weight: 700;
     font-size: 58px;
 }
-.home h1 .yellow{
-    color:#fbcf14;
-}
-.home h1 .blue{
-    color:#016699;
-}
-.home h1 .green{
-    color:#47b649;
-}
-.home h1 .orange{
-    color:#f26722;
-}
-.home h1 .purple{
-    color:#95268f;
-}
-.home h1 .black{
-    color:#8e8b8b;
-}
 .home h1 span{
     font-family: 'Varela Round', sans-serif;
     font-weight: 900;
@@ -96,7 +91,11 @@ p{
 .home .home-image2{
     background-image:url(./images/out-of-school-image-min.JPG);
 }
-.home .home-image, .home .home-image2{
+.home .home-image3{
+    background-image: url(./images/digital-lit.JPG);
+}
+.home .home-image, .home .home-image2, 
+.home .home-image3{
     position: relative;
     z-index: -1;
     height:29.8rem;
@@ -155,14 +154,16 @@ p{
     margin-bottom: 0;
 }
 .about p{
-    margin:2rem 0;
     padding: 0 1rem
+}
+.about .p-top{
+    margin-bottom: 0.5rem;
 }
 .about hr{
     color:#9c029c;
     width:30%;
     height:0.2rem;
-    margin: 0.5rem auto;
+    margin: 0.5rem auto 1rem auto;
 }
 /* Courses */
 .courses{
@@ -346,11 +347,8 @@ p{
     .navbar .navbar-left{
         margin:0;
     }
-    .navbar .register-btn{
+    .navbar .shop{
         margin-left: 0.5rem;
-        padding:2% 10%;
-        border: 1px solid  #320042;
-        text-align: center;
     }
     .about .carousel-img{
         width:100%;
@@ -419,5 +417,13 @@ p{
     }
     .schedule .card{
         line-height: 1.5;
+    }
+}
+@media screen and (min-width:1200px){
+    .about .p-top{
+        margin-bottom: 0;
+    }
+    .about .p-bottom{
+        margin-top: 0;
     }
 }
